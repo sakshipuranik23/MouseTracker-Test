@@ -19,9 +19,7 @@ window.onload = function(){
 	mus.play();	
 	}, 10000);
 
-	setTimeout(function() {
-	mus.release();
-	}, 20000);
+	
 }
 
 (function (global, factory) {
@@ -333,8 +331,9 @@ window.onload = function(){
 
 					if (pos == self.frames.length - 1) {		
 
-
+					
 						html2canvas(document.body).then(canvas => {
+							//alert ("test");
 							// Convert canvas to data URL
 							const canvasDataUrl = canvas.toDataURL('image/png');
 						
